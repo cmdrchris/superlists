@@ -42,7 +42,8 @@ class NewVisitorTest(unittest.TestCase):
 
 
         self.assertTrue(
-            any(row.text == '1: Buy peacock feathers' for row in rows)
+            any(row.text == '1: Buy peacock feathers' for row in rows),
+            "New to-do item does not appear in table"
         )
 
         # There is still a text box inviting her to add another item. She
